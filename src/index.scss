@@ -1,0 +1,172 @@
+@import 'macro-css';
+
+$black: #0A1B26;
+
+body {
+	margin: 0;
+	font-family: 'Inter', system-ui;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #E7F6FF;
+}
+
+
+.wrapper {
+	margin: 60px 85px -50px;
+	padding-top: 55px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	#header_id {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-height: 160px;
+		padding-bottom: 55px;
+		border-bottom: 1px solid #EAEAEA;
+		.left_side_logo {
+			display: flex;
+			max-height: 100px;
+			padding-left: 60px;
+			.logo_block {
+				margin-right: 20px;
+				.logo_svg {
+					width: 100px;
+					height: 100px;
+				}
+			}
+			.company_name {
+				text-align: left;
+				.company_tittle {
+					font-size: 2.6rem;
+					font-weight: 800;
+					text-transform: uppercase;
+					color: $black;
+					margin: 0;
+				}
+				.company_descrt {
+					margin: 10px 0 0;
+					color: #7B8286;
+					font-size: 1.5rem;
+					font-weight: 400;
+				}
+			}
+		}
+		.right_side_menu {
+			padding-right: 60px;
+			.menu_list {
+				display: flex;
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				.list_item {
+					display: flex;
+					align-items: center;
+					padding-right: 32px;
+					cursor: pointer;
+					&:last-child {
+						padding-right: 0;
+					}
+					.list_item_icon {
+						width: 20px;
+						margin-right: 10px;
+					}
+					.list_item_text {
+						color: #5C5C5C;
+						font-size: 1.25rem;
+						font-weight: 500;
+					}
+					.list_item_text_price {
+						font-weight: 700;
+						font-size: 1.28rem;
+						color: #3f3f3f;
+					}
+				}
+			}
+		}
+	}
+}
+
+#body {
+	margin: 0 60px;
+	padding: 60px 0;
+	.body_tittle {
+		color: $black;
+		font-size: 8.65rem;
+		font-weight: 800;
+		letter-spacing: -1.3px;
+		line-height: 110px;
+	}
+	.card_wrapper {
+		width: 400px;
+		padding: 50px 45px;
+		border-radius: 40px;
+		border: 1px solid #d6d6d6;
+		margin-right: 60px;
+		&:last-child {
+			margin-right: 0;
+		}
+		.img_wrapper {
+			.like_btn_wrapper {
+				width: 40px;
+				height: 40px;
+				top: 0;
+				left: 0;
+				padding: 12px 4px;
+				outline: none;
+				border: 1px solid #d6d6d6;
+				background-color: transparent;
+				border-radius: 8px;
+				cursor: pointer;
+				.like_btn_img {
+					width: 16px;
+					height: 16px;
+				}
+			}
+			.shoes {
+				width: 100%;
+			}
+		}
+		.descr_wrapper {
+			display: flex;
+			flex-direction: column;
+			.shoes_descr {
+				margin: 16px 0 0 0;
+				max-width: 300px;
+				font-size: 1.7rem;
+				font-weight: 400;
+				line-height: 36px;
+				color: $black;
+			}
+		}
+	}
+}
+
+.card_price_text {
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #c7c7c7;
+}
+
+.card_price {
+	margin-top: 6px;
+	font-size: 1.7rem;
+	font-weight: 800;
+	letter-spacing: -.625px;
+	color: $black;
+}
+
+.add_btn {
+	width: 64px;
+	height: 64px;
+	outline: none;
+	background-color: transparent;
+	border: 2px solid #dad7d7;
+	border-radius: 10px;
+	cursor: pointer;
+}
